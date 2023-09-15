@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.tripControl.list.TripControlListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/fmTripControlListFilter"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:backgroundTint="#0F5D82"
+            android:ems="10"
+            android:hint="Filter keywords..."
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="#CB062B75"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/fmTripControlListButtonSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/fmTripControlListButtonSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search_26px"
+            app:layout_constraintEnd_toStartOf="@+id/fmTripControlListButtonResetSearch"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/fmTripControlListButtonResetSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/reset_26px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fmTripControlListEmptyNotice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="@string/notification_empty_tripControl_list"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripControlListFilter" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fmTripControlListRecylerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmTripControlListFilter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

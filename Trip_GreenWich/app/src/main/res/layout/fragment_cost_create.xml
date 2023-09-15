@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.expens.CostCreateFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/fmCostCreateType"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="25dp"
+            android:contentDescription="@string/label_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/fmCostCreateLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/fmCostCreateType"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmCostCreateType"
+            app:layout_constraintTop_toBottomOf="@+id/fmCostCreateType">
+
+            <EditText
+                android:id="@+id/fmCostCreateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/label_date"
+                android:inputType="date"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/fmCostCreateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/label_time"
+                android:inputType="time"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/fmCostCreateContent"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="64dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/label_content"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmCostCreateLinearLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmCostCreateLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/fmCostCreateLinearLayout" />
+
+        <Button
+            android:id="@+id/fmCostCreateButtonCancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/label_cancel"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/fmCostCreateContent"
+            app:layout_constraintTop_toBottomOf="@+id/fmCostCreateContent" />
+
+        <Button
+            android:id="@+id/fmCostCreateButtonAdd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:text="@string/label_add_cost"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fmCostCreateButtonCancel"
+            app:layout_constraintEnd_toEndOf="@+id/fmCostCreateContent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/fmCostCreateButtonCancel"
+            app:layout_constraintTop_toTopOf="@+id/fmCostCreateButtonCancel"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/fmCostCreateAmount"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/label_amount"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/fmCostCreateContent"
+            app:layout_constraintEnd_toEndOf="@+id/fmCostCreateType"
+            app:layout_constraintStart_toStartOf="@+id/fmCostCreateType"
+            app:layout_constraintTop_toBottomOf="@+id/fmCostCreateLinearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

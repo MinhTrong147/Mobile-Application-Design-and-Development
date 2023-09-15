@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "724874884739",
+    "firebase_url": "https://trip-project-6740d-default-rtdb.firebaseio.com",
+    "project_id": "trip-project-6740d",
+    "storage_bucket": "trip-project-6740d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724874884739:android:4f13c1027aaa781d98cdb6",
+        "android_client_info": {
+          "package_name": "vn.edu.greenwich.trip_greenwich"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724874884739-lrb65rl6lg1uoldqlagjjh7cd5s28ssd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.edu.greenwich.trip_greenwich",
+            "certificate_hash": "e4f97039fc4e2c38b04d5628c290f34939451a64"
+          }
+        },
+        {
+          "client_id": "724874884739-bcpsmv983hs9624dh51k2ov7pumpklhi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1140UrFrdCmF8PAM8okPIjDtQ9elyG6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724874884739-bcpsmv983hs9624dh51k2ov7pumpklhi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

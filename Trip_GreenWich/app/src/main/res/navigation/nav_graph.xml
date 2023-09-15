@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tripControlListFragment">
+
+    <fragment
+        android:id="@+id/tripControlRegisterFragment"
+        android:name="vn.edu.greenwich.trip_greenwich.ui.tripControl.TripControlRegisterFragment"
+        android:label="New Trip"
+        tools:layout="@layout/fragment_trip_control_register" />
+    <fragment
+        android:id="@+id/tripControlListFragment"
+        android:name="vn.edu.greenwich.trip_greenwich.ui.tripControl.list.TripControlListFragment"
+        android:label="List Trip"
+        tools:layout="@layout/fragment_trip_control_list"/>
+    <fragment
+        android:id="@+id/tripControlDetailFragment"
+        android:name="vn.edu.greenwich.trip_greenwich.ui.tripControl.TripControlDetailFragment"
+        android:label="Trip Detail"
+        tools:layout="@layout/fragment_trip_control_detail">
+        <argument
+            android:name="TripControl"
+            app:argType="vn.edu.greenwich.trip_greenwich.models.TripControl" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="vn.edu.greenwich.trip_greenwich.ui.info.AboutUsFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/tripControlUpdateFragment"
+        android:name="vn.edu.greenwich.trip_greenwich.ui.tripControl.TripControlUpdateFragment"
+        android:label="Trip Update"
+        tools:layout="@layout/fragment_trip_control_update" />
+</navigation>

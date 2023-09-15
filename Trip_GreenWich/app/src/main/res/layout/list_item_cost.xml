@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/listItemCostDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/blue"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/listItemCostTime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:textColor="#009688"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemCostDate"
+        app:layout_constraintStart_toEndOf="@+id/listItemCostDate"
+        app:layout_constraintTop_toTopOf="@+id/listItemCostDate" />
+
+    <TextView
+        android:id="@+id/listItemCostType"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemCostTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listItemCostTime" />
+
+    <TextView
+        android:id="@+id/listItemCostContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/blue"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/listItemCostType"
+        app:layout_constraintStart_toStartOf="@+id/listItemCostDate"
+        app:layout_constraintTop_toBottomOf="@+id/listItemCostDate" />
+
+    <TextView
+        android:id="@+id/listItemCostAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="76dp"
+        android:textColor="@color/blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemCostTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listItemCostTime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/listItemCostDelete"
+        android:layout_width="85dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listItemCostContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listItemCostType"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#25241E" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
